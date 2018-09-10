@@ -1,0 +1,165 @@
+body{
+    box-sizing: border-box;
+    }
+th{
+    background: olivedrab;
+    border: ridge;
+    color: yellow;
+}
+h1{
+    font-size: 28px;
+    line-height: 1.5;
+}
+h2{
+    font-size: 22px;
+    line-height: 1.5;
+    margin-right: 1%;
+}
+h3{
+    font-size: 18px;
+    line-height: 1.5;
+}
+form{
+    margin: 1% 2%;
+    display: inline-block;
+    width: 100%;
+}
+tr{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container{
+    border: ridge;
+    width: 1420px;
+    margin: 0 auto;
+    background: tan;
+    padding-top: 5px;
+}
+.table{
+    height: 500px;
+    width: 1400px;
+    background: darkgoldenrod;
+    border: ridge;
+    margin: auto;
+}
+.tableHead{
+    width: 1400px;
+    padding: 0;
+    margin: auto;
+}
+.adminInput{
+    width: 1400px;
+    height: 200px;
+    border: ridge;
+    margin: 5px auto;
+    background: darkolivegreen;
+}
+.userInput{
+    width: 1400px;
+    height: 200px;
+    border: ridge;
+    margin: 0 auto;
+    background: olive;
+}
+.tableRow{
+    position: relative;
+    height: 100%;
+    background: rgb(91, 99, 88);
+}
+.routeName{
+    position: relative;
+    height: 20px;
+    border: ridge;
+    border-color: rgb(141, 141, 141);
+    padding-left: 1%;
+    color: lightgray;
+}
+.destination{
+    border: ridge;
+    position: relative;
+    padding-left: 1%;
+    border-color: rgb(141, 141, 141);
+    color: lightgray;
+}
+.runTime{
+    text-align: center;
+    border: ridge;
+    border-color: rgb(141, 141, 141);
+    background: rgb(91, 99, 88);
+}
+.minutes{
+    text-align: center;
+    border: ridge;
+    border-color: rgb(141, 141, 141);
+}
+.forminess{
+    display: inline-block;
+}
+.numberTiles{
+    display: inline-block;
+    border: ridge;
+    border-width: 3px;
+    letter-spacing: 2px;
+    border-color: rgb(141, 141, 141);
+    background: tan;
+    background-image: linear-gradient(rgb(216, 132, 22), tan, rgb(121, 85, 39)); 
+    color: rgb(20, 75, 20);
+    box-shadow: 0px 0px 10px #f0dead inset;
+}
+.hightlight{
+    background: red !important;
+}
+.num{
+    position: relative;
+    width: 70px;
+    left: 0;
+    background: firebrick;
+    display: inline-block;
+}
+.min{
+    position: relative;
+    width: 70px;
+    right: 0;
+    top: 0;
+    background: bisque;
+    display: inline-block;
+}
+
+#submit{
+    margin: 1% 0;
+}
+#routeName{
+    width: 420px;
+}
+#destination{
+    width: 420px;
+}
+#nextTrain{
+    width: 140px;
+}
+#eta{
+    width: 140px;
+}
+#firstRun{
+    width: 140px;
+}
+#frequency{
+    width: 140px
+}
+#firstHours{
+    width: 45px;
+}
+#firstMinutes{
+    width: 45px;
+}
+
+#route,
+#dest,
+#hours,
+#minutes,
+#freq,
+#submit,
+#clearRoute{
+    background: tan;
+}
