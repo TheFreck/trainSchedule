@@ -4,7 +4,8 @@ body{
 th{
     background: olivedrab;
     border: ridge;
-    color: yellow;
+    color: rgb(255, 218, 51);
+    text-shadow: 0 0 10px rgb(201, 0, 0);
 }
 h1{
     font-size: 28px;
@@ -22,7 +23,7 @@ h3{
 form{
     margin: 1% 2%;
     display: inline-block;
-    width: 100%;
+    width: 30%;
 }
 tr{
     font-size: 18px;
@@ -54,13 +55,7 @@ tr{
     border: ridge;
     margin: 5px auto;
     background: darkolivegreen;
-}
-.userInput{
-    width: 1400px;
-    height: 200px;
-    border: ridge;
-    margin: 0 auto;
-    background: olive;
+    z-index: 22;
 }
 .tableRow{
     position: relative;
@@ -70,15 +65,23 @@ tr{
 .routeName{
     position: relative;
     height: 20px;
-    border: ridge;
+    border: groove;
+    border-right-width: 5px;
+    border-left-width: 5px;
     border-color: rgb(141, 141, 141);
     padding-left: 1%;
     color: lightgray;
+}
+.routStination{
+    background-image: linear-gradient(rgb(66, 66, 66), rgb(124, 124, 124), rgb(92, 92, 92)); 
 }
 .destination{
     border: ridge;
     position: relative;
     padding-left: 1%;
+    border: groove;
+    border-right-width: 5px;
+    border-left-width: 5px;
     border-color: rgb(141, 141, 141);
     color: lightgray;
 }
@@ -92,23 +95,22 @@ tr{
     text-align: center;
     border: ridge;
     border-color: rgb(141, 141, 141);
+    background: rgb(91, 99, 88);
 }
 .forminess{
     display: inline-block;
+    text-shadow: 0 0 10px rgb(182, 107, 10);
 }
 .numberTiles{
     display: inline-block;
     border: ridge;
-    border-width: 3px;
+    border-width: 2px;
     letter-spacing: 2px;
     border-color: rgb(141, 141, 141);
     background: tan;
     background-image: linear-gradient(rgb(216, 132, 22), tan, rgb(121, 85, 39)); 
-    color: rgb(20, 75, 20);
+    color: rgb(3, 36, 3);
     box-shadow: 0px 0px 10px #f0dead inset;
-}
-.hightlight{
-    background: red !important;
 }
 .num{
     position: relative;
@@ -125,31 +127,40 @@ tr{
     background: bisque;
     display: inline-block;
 }
+.adminForm{
+    display: inline-block;
+}
+.trainImage{
+    position: relative;
+    margin: 0 1%;
+}
+.reverse{
+    transform: scaleX(-1);
+}
+.glow{
+    background: rgb(190, 14, 14);
+    box-shadow: 0 0 25px rgb(133, 28, 28);
+    z-index: 6;
+}
 
 #submit{
     margin: 1% 0;
 }
-#routeName{
-    width: 420px;
-}
+
+#routeName,
 #destination{
     width: 420px;
+    width: 420px;
 }
-#nextTrain{
-    width: 140px;
-}
-#eta{
-    width: 140px;
-}
-#firstRun{
-    width: 140px;
-}
+
+#nextTrain,
+#eta,
+#firstRun,
 #frequency{
-    width: 140px
+    width: 140px;
 }
-#firstHours{
-    width: 45px;
-}
+
+#firstHours,
 #firstMinutes{
     width: 45px;
 }
@@ -160,6 +171,7 @@ tr{
 #minutes,
 #freq,
 #submit,
-#clearRoute{
+#clear{
     background: tan;
+    box-shadow: 0 0 10px rgb(150, 88, 7) inset;
 }
